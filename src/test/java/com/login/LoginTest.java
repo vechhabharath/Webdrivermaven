@@ -23,6 +23,7 @@ public class LoginTest {
 	{
 		driver.get("https://accounts.google.com/");
 		driver.findElement(By.name("identifier")).sendKeys("vechhabharath@gmail.com",Keys.ENTER);
+		driver.findElement(By.name("password")).sendKeys("password");
 	}
 	@AfterSuite
 	public void tearDown()
